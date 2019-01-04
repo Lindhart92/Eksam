@@ -1,0 +1,505 @@
+html {
+    
+}
+
+
+body {
+    
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+
+    
+  }
+
+.nav {
+    display: grid;
+    position: absolute;
+    position: fixed;
+
+    top: 0;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    "a b c d e"
+    
+    }  
+
+.wrapper {
+    display: grid;
+    margin-top: -10px;
+    margin: 0px 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto; 
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    "hh hh hh hh hh hh"    
+    "a a a b b b"
+    "d d d c c c"
+    "e e e f f f"    
+    }
+
+h1 {
+    grid-area: h1;
+   
+    text-align: center;
+    font-size: 7vw;   
+}
+
+
+
+
+#box {
+    background-color: dimgray;
+    grid-area: a;
+
+}
+
+#box1 {
+    background-color: dimgray;
+    grid-area: b;
+    
+
+}
+
+#box2 {
+    background-color: dimgray;
+    grid-area: c;
+
+}
+
+#box3 {
+    background-color: dimgray;
+    grid-area: d;
+
+   
+}
+
+#box4 {
+    background-color: dimgray;
+    grid-area: e;
+
+}
+hr {
+    border-width: 4;
+    border-style:solid
+}
+
+[id^=box] {
+    min-height: 40px;
+    position: relative;
+/*  
+    transition: all 1.0s ease-in-out;
+    display: flex;
+    position: relative;
+    
+}
+
+[id^=box]:hover {
+    
+    transform: translate(0px, 150px);
+*/    
+}
+
+[id^=item] {
+    min-height: 150px;
+    height: 100%;
+    width: 100%;
+    
+    text-align: center
+}
+
+#item {
+    grid-area: hh;
+}
+
+#item-1 {
+    
+    grid-area: a;
+}
+
+#item-2 {
+    
+    grid-area: b;
+}
+
+#item-3 {
+    
+    grid-area: d;
+}
+
+#item-4 {
+    
+    grid-area: c;
+}
+
+#item-5 {
+    
+    grid-area: e;
+}
+
+#item-6 {
+    
+    grid-area: f;
+    
+}
+
+
+
+img {
+    width: 100%;
+    height: 80%;
+    object-fit:contain
+}
+
+p {
+    color: black;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+#over {
+    grid-area: bb;
+    text-align:center;
+    color: antiquewhite;
+    padding-bottom: 2px;
+    font-size: 3vw;
+    list-style: none;
+    text-decoration:none;
+}
+
+[id^=link] {
+    display: none;
+    border-bottom: 2px solid black;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+}
+
+#link-1 {
+    grid-area: å;
+}
+#link-2 {
+    grid-area: p;
+}
+#link-3 {
+    grid-area: o;
+}
+#link-4 {
+    grid-area: i;
+}
+#link-5 {
+    grid-area: u;
+    
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+   
+}
+
+
+#box {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#box1 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto; 
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#box2 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto; 
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#box3 {
+    display: grid;
+    
+grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#box4 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#box5 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Screens/Breakpoints*/
+@media only screen and (min-width: 400px) {
+    body {
+        
+    }
+    
+.nav {
+    display: grid;
+    background-color: 
+    
+    border-width: 0px 0px 5px 0px;
+    border-radius: 5px;
+    position: absolute;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    "a b c d e"
+    
+    }  
+
+.wrapper {
+    display: grid;
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto ; 
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    "hh hh hh hh hh hh"    
+    "a a a b b b"
+    "d d d c c c"
+    "e e e f f f"
+    
+        
+    }
+    
+    [id^=item] {
+    height: 100%;
+    width: 100%;
+    
+    text-align: center
+}
+
+
+    
+    
+    [id^=box] {
+    min-height: 30px;
+    position: relative;
+    
+        
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    p {
+        font-size: 2vw;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+          
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    
+.nav {
+    display: grid;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0;
+    grid-column-gap: 10px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    ". a b c d e ."   
+    }      
+    
+    
+    
+.wrapper {
+    display: grid;
+    margin-top: -100px;
+    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto; 
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    ". . hh hh . ."    
+    ". . a b . ."
+    ". . d c . ."
+    ". . e f . ."    
+    }
+    
+    
+    }    
+    
+[id^=box] {
+    position:relative;
+    min-height: 400px;
+    transition: all 2.0s ease-in-out;
+    top: -340px;
+    
+}
+
+[id^=box]:hover {
+    
+    transform: translate(0px, 330px);
+   
+}    
+    
+[id^=link] {
+    display: block;
+    padding-top: 20px;
+    font-size: 1.5vw;
+    width: 100%;
+   
+    }  
+
+     
+#over {
+    grid-area: bb;
+    text-align:center;
+    color: black;
+    padding-top: 50px;
+    font-size: 1.5vw;
+    list-style: none;
+    text-decoration:none;
+    font-weight: 600;
+}    
+
+     
+    
+
+h1 {
+        
+        margin-top: 120px;
+        font-size: 3vw;
+        padding: 0;
+        position: relative;
+    }    
+    
+    p {
+        font-size: 1.3vw;
+        line-height: 2vw;
+        padding: 0px 15px;
+        
+    }    
+    
+    footer {
+        height: 30px;
+    }    
+    
+  hr {
+    grid-area: hr;
+    border-width: 4;
+    border-style:solid
+}
+    
+    
+    
+    
+}
+
+
+
+

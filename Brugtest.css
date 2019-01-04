@@ -1,0 +1,570 @@
+html {
+    
+}
+
+
+body {
+    
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+
+    
+  }
+
+nav {
+    display: grid;
+    background-color: white;
+    border-color:dimgrey;
+    border-style:outset;
+    border-width: 0px 0px 5px 0px;
+    border-radius: 5px;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    "a b c d e"
+    
+    }  
+
+.wrapper {
+    display: grid;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin-top: -10px;
+    margin: 0px 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;  
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    "tk1 tk1 tk1 tk1 tk1 tk1"     
+    
+    "tkk tkk tkk tkk tkk tkk" 
+    "tk2 tk2 tk2 tk2 tk2 tk2"
+    "bi2 bi2 bi2 bi2 bi2 bi2"
+    "bi1 bi1 bi1 bi1 bi1 bi1"    
+    "tk3 tk3 tk3 tk3 tk3 tk3"
+    "bi3 bi3 bi3 bi3 bi3 bi3"
+    "bii bii bii bii bii bii"
+    
+    "biii biii biii biii biii biii"
+    "tkkk tkkk tkkk tkkk tkkk tkkk"    
+    }
+
+[id^=box] {
+    
+    align-self: center;
+   
+}
+
+#box1 {
+    grid-area: tk1;
+}
+
+#box2 {
+    grid-area: bi1;
+}
+
+#box3 {
+    grid-area: tk2;
+}
+
+#box4 {
+    grid-area: bi2;
+    border-top: 2px solid black;
+}
+
+#box5 {
+    grid-area: tk3;
+    border-top: 2px solid black;
+    
+}
+
+#box6 {
+    grid-area: bi3;
+    
+}
+
+#box7 {
+    grid-area: bii;
+}
+
+#box8 {
+    
+    grid-area: tkk;
+    
+}
+
+#box9 {
+    grid-area: biii;
+    
+}
+
+#box10 {
+    
+    grid-area: tkkk;
+    
+}
+
+h1 {
+    grid-area: h1;
+    
+    text-align: center;
+    font-size: 7vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+[id^=link]:hover {
+    background-color: black;
+}
+#over:hover {
+    background-color: black; 
+}
+
+#drop {
+
+    grid-area: a;
+
+}
+
+#drop1 {
+
+    grid-area: b;
+    
+
+}
+
+#drop2 {
+
+    grid-area: c;
+
+}
+
+#drop3 {
+
+    grid-area: d;
+
+   
+}
+
+#drop4 {
+    
+    grid-area: e;
+
+}
+hr {
+    border-width: 4;
+    border-style:solid
+}
+
+[id^=drop] {
+    background-color: white;
+    min-height: 20px;
+    position: relative;
+   
+    
+/*  
+    transition: all 1.0s ease-in-out;
+    display: flex;
+    position: relative;
+    
+}
+
+[id^=drop]:hover {
+    
+    transform: translate(0px, 150px);
+*/    
+}
+
+
+p {
+    color: black;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+#over {
+    grid-area: bb;
+    text-align:center;
+    color: black;
+    padding-bottom: 2px;
+    font-size: 3vw;
+    list-style: none;
+    text-decoration:none;
+}
+
+[id^=link] {
+    display: none;
+    border-bottom: 2px solid black;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+}
+
+#link-1 {
+    grid-area: å;
+}
+#link-2 {
+    grid-area: p;
+}
+#link-3 {
+    grid-area: o;
+}
+#link-4 {
+    grid-area: i;
+}
+#link-5 {
+    grid-area: u;
+    
+}
+
+#norm {
+    object-fit: contain;
+    max-height: 450px;
+    min-height: 100%;
+    width: 100%;
+    
+    }
+
+#stor {
+    
+    object-fit: contain;
+    min-height: 100%;
+    max-height: 450px;
+    width: 100%;
+    
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+   
+}
+
+
+#drop {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#drop1 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto; 
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#drop2 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto; 
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#drop3 {
+    display: grid;
+    
+grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#drop4 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+#drop5 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". å ."
+        ". p ."
+        ". o ."
+        ". i ."
+        ". u ."
+        ". bb ."
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Screens/Breakpoints*/
+@media only screen and (min-width: 400px) {
+    body {
+        
+    }
+    
+nav {
+    display: grid;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    "a b c d e"
+    
+    }  
+
+.wrapper {
+    display: grid;
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto; ; 
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    "tk1 tk1 tk1 tk1 tk1 tk1"
+    "tkk tkk tkk tkk tkk tkk"     
+    "tk2 tk2 tk2 tk2 tk2 tk2"    
+    
+    "bi2 bi2 bi2 bi2 bi2 bi2"
+    "tk3 tk3 tk3 tk3 tk3 tk3"
+    "bi3 bi3 bi3 bi3 bi3 bi3"
+    "bii bii bii bii bii bii"
+    "tkk tkk tkk tkk tkk tkk"
+    "biii biii biii biii biii biii"  
+    "tkkk tkkk tkkk tkkk tkkk tkkk"    
+    }
+    
+
+
+    
+    
+    [id^=drop] {
+    min-height: 25px;
+    position: relative;
+    
+        
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    p {
+        font-size: 2vw;
+        padding: 0px 10px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+          
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    
+nav {
+    display: grid;
+    height: 60px;
+   
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0;
+    grid-column-gap: 10px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+    ". a b c d e ."   
+    }      
+    
+     
+ .wrapper {
+    display: grid;
+    margin-top: -30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto; 
+    grid-template-areas:
+    "h1 h1 h1 h1"
+    "tk1 tk1 tk1 tk1"
+    "tkk tkk tkk tkk"     
+    "tk2 tk2 tk2 tk2"
+    "bi2 bi2 bi2 bi2"    
+    "bi1 bi1 bi1 bi1" 
+    
+    "tk3 tk3 tk3 tk3"
+    "tk3 tk3 tk3 tk3"
+    "bii bii bii bii"
+    "bii bii bii bii"
+    "biii biii biii biii"  
+    "biii biii biii biii"    
+    }  
+
+    
+    
+[id^=drop] {
+    position:relative;
+    min-height: 400px;
+    transition: all 2.0s ease-in-out;
+    top: -343px;
+    border-color:dimgrey;
+    border-style:outset;
+    border-width: 2px 2px;
+    border-radius: 5px;
+}
+
+[id^=drop]:hover {
+    
+    transform: translate(0px, 330px);
+   
+}    
+    
+[id^=link] {
+    display: block;
+    padding-top: 20px;
+    font-size: 1.5vw;
+    width: 100%;
+
+    } 
+    
+nav li {
+        list-style: none;
+    text-decoration:none;
+    }
+
+     
+#over {
+    grid-area: bb;
+    text-align:center;
+    color: black;
+    padding-top: 50px;
+    font-size: 1.5vw;
+    list-style: none;
+    text-decoration:none;
+    font-weight: 600;
+}    
+
+
+h1 {
+        
+        margin-top: 120px;
+        font-size: 3vw;
+        padding: 0;
+        position: relative;
+    }    
+    
+h2 {
+        
+    }
+    
+    p {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        padding: 0px 15px;
+        
+    } 
+    
+    
+    footer {
+        height: 30px;
+    }    
+    
+    .wrapper p {
+        vertical-align: middle;
+    }
+
+    
+    
+    
+}
